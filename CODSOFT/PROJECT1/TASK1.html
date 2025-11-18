@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deepanshu | Engineering Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="TASK1.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#home" class="logo">Deepanshu</a>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a> 
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="accent">Deepanshu</span></h1>
+        <p class="lead">An engineering student passionate about technology, software development, and innovative problem solving. I love building real-world projects and learning new technologies every day.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn filled">View Projects</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+        <div class="hero-social">
+          <a href="#" title="LinkedIn">LinkedIn</a>
+          <a href="#" title="GitHub">GitHub</a>
+          <a href="mailto:deepanshu@example.com" title="Email">Email</a>
+        </div>
+      </div>
+      <div class="hero-card">
+      
+        <img src="D:\pbl\CODSOFT\PROJECT1\profile1.jpg" alt="Deepanshu Profile Picture">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am an engineering student specializing in Computer Science. My interests include software development, networking, and compiler design. I enjoy exploring new technologies and working on projects that combine creativity and technical knowledge.</p>
+          <ul class="meta">
+            <li><strong>Location:</strong> Uttarakhand, India</li>
+            <li><strong>Email:</strong> <a href="mailto:deepanshu@example.com">deepanshu@example.com</a></li>
+            <li><strong>Education:</strong> B.Tech in Computer Science and Engineering</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Projects</p>
+          </div>
+          <div class="stat">
+            <h3>3+</h3>
+            <p>Years Learning</p>
+          </div>
+          <div class="stat">
+            <h3>5+</h3>
+            <p>Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img src="D:\pbl\CODSOFT\PROJECT1\image 1.jpeg" alt="Process Management System">
+          <div class="project-body">
+            <h3>Process Management System</h3>
+            <p>A Java Swing-based application implementing CPU scheduling algorithms like FCFS and SJF (preemptive and non-preemptive).</p>
+            <div class="project-links">
+              <a href="#" class="link">View Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="D:\pbl\CODSOFT\PROJECT1\image 2.png" alt="Compiler Design Interpreter">
+          <div class="project-body">
+            <h3>Compiler Design Interpreter</h3>
+            <p>A Python-based compiler interpreter that parses and executes a domain-specific language with error handling and GUI interface.</p>
+            <div class="project-links">
+              <a href="#" class="link">View Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="D:\pbl\CODSOFT\PROJECT1\image 3.webp" alt="University Network Simulation">
+          <div class="project-body">
+            <h3>University Network Simulation</h3>
+            <p>A simulated university network designed using Cisco Packet Tracer with VPN and firewall configurations for secure communication.</p>
+            <div class="project-links">
+              <a href="#" class="link">View Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Java</h4>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Python</h4>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>HTML & CSS</h4>
+          <div class="bar"><span style="width:95%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Networking & Packet Tracer</h4>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Contact Me</h2>
+        <p>If you’d like to collaborate or discuss new opportunities, feel free to reach out to me.</p>
+        <ul class="contact-info">
+          <li><strong>Email:</strong> <a href="mailto:deepanshu@example.com">deepanshu@example.com</a></li>
+          <li><strong>Phone:</strong> +91 9XXXXXXXXX</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" onsubmit="alert('Form submission is demo only'); return false;">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn filled">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> Deepanshu | Engineering Portfolio. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('navToggle');
+  navToggle.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
